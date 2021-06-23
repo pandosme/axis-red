@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nodered:
+    container_name: axis-red
+    restart: always
+    image: nodered/node-red
+    user: '0'    
+    ports:
+      - '1880:1880'
+    volumes:
+      - ./nodered:/data
